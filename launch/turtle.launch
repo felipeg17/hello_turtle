@@ -1,0 +1,8 @@
+<launch>
+  <node
+    pkg="turtlesim" 
+    name="sim" 
+    type="turtlesim_node">
+    <rosparam file="$(find beginner_tutorials)/params.yaml" command="load" ns=""/>
+  </node>
+</launch>
